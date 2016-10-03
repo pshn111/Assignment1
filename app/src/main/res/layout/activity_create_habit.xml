@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.roy.spei_habittracker.CreateHabit">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcel"
+        android:id="@+id/cancelbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/createbutton"
+        android:layout_above="@+id/cancelbutton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create Your Habit"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TitleEditText"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Habit Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Repeat Day"
+        android:id="@+id/textView3"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/TitleEditText"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon"
+        android:id="@+id/MoncheckBox"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/WedcheckBox"
+        android:layout_toStartOf="@+id/textView2"
+        android:checked="false"
+        android:background="@color/abc_search_url_text_normal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/MoncheckBox"
+        android:layout_alignStart="@+id/FricheckBox"
+        android:checked="false"
+        android:text="Tue"
+        android:background="@color/abc_search_url_text_normal"
+        android:id="@+id/TuecheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wed"
+        android:id="@+id/WedcheckBox"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:checked="false"
+        android:background="@color/abc_search_url_text_normal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thu"
+        android:id="@+id/ThucheckBox"
+        android:textSize="20dp"
+        android:checked="false"
+        android:background="@color/abc_search_url_text_normal"
+        android:layout_alignTop="@+id/SatcheckBox"
+        android:layout_alignStart="@+id/MoncheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fri"
+        android:id="@+id/FricheckBox"
+        android:layout_alignBottom="@+id/ThucheckBox"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:checked="false"
+        android:background="@color/abc_search_url_text_normal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sat"
+        android:id="@+id/SatcheckBox"
+        android:textSize="20dp"
+        android:checked="false"
+        android:background="@color/abc_search_url_text_normal"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/WedcheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sun"
+        android:id="@+id/SuncheckBox"
+        android:textSize="20dp"
+        android:layout_marginTop="37dp"
+        android:checked="false"
+        android:background="@color/abc_search_url_text_normal"
+        android:layout_below="@+id/FricheckBox"
+        android:layout_alignStart="@+id/FricheckBox" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/datebutton"
+        android:layout_below="@+id/TitleEditText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
